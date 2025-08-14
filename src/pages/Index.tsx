@@ -11,20 +11,20 @@ import Footer from "@/components/portfolio/Footer";
 const Index = () => {
   return (
     <div className="min-h-screen bg-background relative overflow-hidden">
-      {/* AI Background Effects */}
-      <div className="fixed inset-0 bg-gradient-ai-mesh pointer-events-none z-0"></div>
+      {/* Subtle Light Background Effects */}
+      <div className="fixed inset-0 bg-gradient-ai-mesh pointer-events-none z-0 opacity-60"></div>
       <div className="fixed inset-0 bg-gradient-ai-hero pointer-events-none z-0"></div>
       
-      {/* Animated Grid Pattern */}
-      <div className="fixed inset-0 opacity-10 pointer-events-none z-0">
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(212,255,255,0.1)_1px,transparent_1px),linear-gradient(90deg,rgba(212,255,255,0.1)_1px,transparent_1px)] bg-[size:50px_50px] animate-ai-float"></div>
+      {/* Subtle Grid Pattern */}
+      <div className="fixed inset-0 opacity-[0.02] pointer-events-none z-0">
+        <div className="absolute inset-0 bg-[linear-gradient(rgba(214,255,255,0.3)_1px,transparent_1px),linear-gradient(90deg,rgba(214,255,255,0.3)_1px,transparent_1px)] bg-[size:60px_60px] animate-ai-float"></div>
       </div>
       
-      {/* Floating Particles */}
+      {/* Subtle Floating Particles */}
       <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute top-1/4 left-1/4 w-2 h-2 bg-ai-neon rounded-full animate-ai-matrix opacity-40"></div>
-        <div className="absolute top-3/4 right-1/4 w-1 h-1 bg-ai-electric rounded-full animate-ai-matrix opacity-60" style={{animationDelay: '1s'}}></div>
-        <div className="absolute top-1/2 left-3/4 w-1.5 h-1.5 bg-ai-primary rounded-full animate-ai-matrix opacity-50" style={{animationDelay: '2s'}}></div>
+        <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-ai-primary rounded-full animate-ai-matrix opacity-20"></div>
+        <div className="absolute top-3/4 right-1/4 w-0.5 h-0.5 bg-ai-accent rounded-full animate-ai-matrix opacity-25" style={{animationDelay: '1s'}}></div>
+        <div className="absolute top-1/2 left-3/4 w-1 h-1 bg-ai-secondary rounded-full animate-ai-matrix opacity-15" style={{animationDelay: '2s'}}></div>
       </div>
 
       <div className="relative z-10">

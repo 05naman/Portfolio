@@ -2,39 +2,65 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* AI-Inspired Professional Portfolio Design System
+All colors MUST be HSL for perfect theming
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* AI Tech Background - Deep space blues */
+    --background: 222 47% 3%;
+    --foreground: 210 40% 98%;
+    
+    /* AI Accent Colors - Electric blues and cyans */
+    --ai-primary: 212 100% 60%;
+    --ai-secondary: 193 100% 70%;
+    --ai-accent: 271 100% 70%;
+    
+    /* Gradients for AI aesthetic */
+    --gradient-ai-primary: linear-gradient(135deg, hsl(212 100% 60%), hsl(193 100% 70%));
+    --gradient-ai-hero: linear-gradient(135deg, hsl(222 47% 3%) 0%, hsl(232 47% 8%) 50%, hsl(212 47% 12%) 100%);
+    --gradient-ai-accent: linear-gradient(45deg, hsl(271 100% 70%), hsl(212 100% 60%));
+    
+    /* Glass morphism effects */
+    --glass-bg: hsl(222 47% 8% / 0.4);
+    --glass-border: hsl(212 100% 60% / 0.2);
+    
+    /* Shadows with AI glow */
+    --shadow-ai-glow: 0 0 30px hsl(212 100% 60% / 0.3);
+    --shadow-ai-card: 0 8px 32px hsl(222 47% 3% / 0.8);
+    
+    /* Animations */
+    --transition-ai: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    /* Professional spacing */
+    --section-padding: 5rem;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 222 47% 8%;
+    --card-foreground: 210 40% 98%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 222 47% 8%;
+    --popover-foreground: 210 40% 98%;
 
-    --primary: 222.2 47.4% 11.2%;
+    /* Updated semantic tokens for AI theme */
+    --primary: 212 100% 60%;
     --primary-foreground: 210 40% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    --secondary: 232 47% 8%;
+    --secondary-foreground: 210 40% 98%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    --muted: 222 47% 6%;
+    --muted-foreground: 210 20% 70%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    --accent: 193 100% 70%;
+    --accent-foreground: 222 47% 3%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 222 47% 12%;
+    --input: 222 47% 8%;
+    --ring: 212 100% 60%;
 
     --radius: 0.5rem;
 

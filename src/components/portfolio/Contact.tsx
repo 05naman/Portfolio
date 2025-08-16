@@ -1,7 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { Mail, Linkedin, Github, MapPin, Phone, Download } from "lucide-react";
+import { Mail, Linkedin, Github, MapPin, Phone } from "lucide-react";
 
 const Contact = () => {
   const contactInfo = [
@@ -127,10 +127,6 @@ const Contact = () => {
                   </a>
                 </Button>
                 
-                <Button variant="secondary" className="w-full justify-start hover:bg-gradient-ai-accent">
-                  <Download className="mr-3 h-4 w-4" />
-                  Download Resume
-                </Button>
               </CardContent>
             </Card>
           </div>

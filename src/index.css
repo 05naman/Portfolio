@@ -13,30 +13,30 @@ All colors MUST be HSL for perfect theming
     --foreground: 222 84% 4.9%;
     
     /* Professional Interview-Ready Color Palette */
-    --ai-primary: 217 91% 60%;         /* Professional Blue */
-    --ai-secondary: 212 100% 48%;      /* Elegant Deep Blue */
-    --ai-accent: 262 83% 58%;          /* Sophisticated Purple */
-    --ai-neon: 200 98% 39%;            /* Refined Teal */
-    --ai-electric: 249 100% 74%;       /* Soft Lavender */
+    --ai-primary: 158 64% 52%;         /* Professional Emerald */
+    --ai-secondary: 160 84% 39%;       /* Deep Forest Green */
+    --ai-accent: 174 72% 50%;          /* Sophisticated Teal */
+    --ai-neon: 166 76% 37%;            /* Rich Jade */
+    --ai-electric: 152 57% 60%;        /* Soft Mint */
     
     /* Light Theme Professional Gradients */
-    --gradient-ai-primary: linear-gradient(135deg, hsl(217 91% 60%) 0%, hsl(212 100% 48%) 50%, hsl(262 83% 58%) 100%);
-    --gradient-ai-hero: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(217 20% 98%) 25%, hsl(212 15% 97%) 50%, hsl(249 15% 98%) 100%);
-    --gradient-ai-accent: linear-gradient(45deg, hsl(262 83% 58%) 0%, hsl(217 91% 60%) 50%, hsl(200 98% 39%) 100%);
-    --gradient-ai-mesh: radial-gradient(circle at 20% 80%, hsl(217 91% 60% / 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 20%, hsl(262 83% 58% / 0.06) 0%, transparent 50%), radial-gradient(circle at 40% 40%, hsl(200 98% 39% / 0.05) 0%, transparent 50%);
-    --gradient-ai-card: linear-gradient(145deg, hsl(0 0% 100% / 0.95), hsl(217 10% 98% / 0.98));
+    --gradient-ai-primary: linear-gradient(135deg, hsl(158 64% 52%) 0%, hsl(160 84% 39%) 50%, hsl(174 72% 50%) 100%);
+    --gradient-ai-hero: linear-gradient(135deg, hsl(0 0% 100%) 0%, hsl(158 20% 98%) 25%, hsl(160 15% 97%) 50%, hsl(174 15% 98%) 100%);
+    --gradient-ai-accent: linear-gradient(45deg, hsl(174 72% 50%) 0%, hsl(158 64% 52%) 50%, hsl(166 76% 37%) 100%);
+    --gradient-ai-mesh: radial-gradient(circle at 20% 80%, hsl(158 64% 52% / 0.08) 0%, transparent 50%), radial-gradient(circle at 80% 20%, hsl(174 72% 50% / 0.06) 0%, transparent 50%), radial-gradient(circle at 40% 40%, hsl(166 76% 37% / 0.05) 0%, transparent 50%);
+    --gradient-ai-card: linear-gradient(145deg, hsl(0 0% 100% / 0.95), hsl(158 10% 98% / 0.98));
     
     /* Professional Glass morphism */
     --glass-bg: hsl(0 0% 100% / 0.8);
     --glass-bg-strong: hsl(0 0% 100% / 0.95);
-    --glass-border: hsl(217 91% 60% / 0.15);
-    --glass-border-strong: hsl(217 91% 60% / 0.3);
+    --glass-border: hsl(158 64% 52% / 0.15);
+    --glass-border-strong: hsl(158 64% 52% / 0.3);
     
     /* Professional Light Theme Shadows */
-    --shadow-ai-glow: 0 0 25px hsl(217 91% 60% / 0.15), 0 0 50px hsl(262 83% 58% / 0.08);
-    --shadow-ai-card: 0 8px 32px hsl(217 84% 4.9% / 0.08), 0 0 0 1px hsl(217 91% 60% / 0.04);
-    --shadow-ai-intense: 0 0 35px hsl(217 91% 60% / 0.2), 0 0 70px hsl(262 83% 58% / 0.1);
-    --shadow-ai-subtle: 0 2px 16px hsl(217 84% 4.9% / 0.06);
+    --shadow-ai-glow: 0 0 25px hsl(158 64% 52% / 0.15), 0 0 50px hsl(174 72% 50% / 0.08);
+    --shadow-ai-card: 0 8px 32px hsl(158 84% 4.9% / 0.08), 0 0 0 1px hsl(158 64% 52% / 0.04);
+    --shadow-ai-intense: 0 0 35px hsl(158 64% 52% / 0.2), 0 0 70px hsl(174 72% 50% / 0.1);
+    --shadow-ai-subtle: 0 2px 16px hsl(158 84% 4.9% / 0.06);
     
     /* Smooth Animations */
     --transition-ai: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -53,24 +53,24 @@ All colors MUST be HSL for perfect theming
     --popover-foreground: 222 84% 4.9%;
 
     /* Updated semantic tokens for professional theme */
-    --primary: 217 91% 60%;
+    --primary: 158 64% 52%;
     --primary-foreground: 0 0% 100%;
 
-    --secondary: 217 15% 96%;
-    --secondary-foreground: 217 30% 18%;
+    --secondary: 158 15% 96%;
+    --secondary-foreground: 158 30% 18%;
 
-    --muted: 217 10% 95%;
-    --muted-foreground: 217 20% 50%;
+    --muted: 158 10% 95%;
+    --muted-foreground: 158 20% 50%;
 
-    --accent: 262 83% 58%;
+    --accent: 174 72% 50%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 217 15% 88%;
-    --input: 217 15% 88%;
-    --ring: 217 91% 60%;
+    --border: 158 15% 88%;
+    --input: 158 15% 88%;
+    --ring: 158 64% 52%;
 
     --radius: 0.75rem;
 

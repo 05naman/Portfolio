@@ -112,8 +112,8 @@ export default {
 					'50%': { transform: 'translateY(-10px)' }
 				},
 				'ai-glow': {
-					'0%, 100%': { boxShadow: '0 0 20px hsl(212 100% 60% / 0.4)' },
-					'50%': { boxShadow: '0 0 40px hsl(212 100% 60% / 0.8), 0 0 60px hsl(271 100% 70% / 0.4)' }
+					'0%, 100%': { boxShadow: '0 0 20px hsl(217 91% 60% / 0.3)' },
+					'50%': { boxShadow: '0 0 35px hsl(217 91% 60% / 0.6), 0 0 50px hsl(262 83% 58% / 0.3)' }
 				},
 				'ai-scan': {
 					'0%': { transform: 'translateX(-100%)' },

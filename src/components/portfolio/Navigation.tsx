@@ -60,9 +60,6 @@ const Navigation = () => {
                 {item.name}
               </button>
             ))}
-            <Button size="sm" className="bg-gradient-ai-primary hover:shadow-ai-glow">
-              <a href="mailto:namannigam300@gmail.com">Hire Me</a>
-            </Button>
           </div>
 
           {/* Mobile Menu Button */}
@@ -93,9 +90,6 @@ const Navigation = () => {
                   {item.name}
                 </button>
               ))}
-              <Button size="sm" className="bg-gradient-ai-primary hover:shadow-ai-glow mt-4 w-fit">
-                <a href="mailto:namannigam300@gmail.com">Hire Me</a>
-              </Button>
             </div>
           </div>
         )}

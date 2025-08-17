@@ -27,14 +27,14 @@ const Skills = () => {
 
   return (
     <section className="py-24 relative overflow-hidden">
-      {/* Light Theme Background Effects */}
-      <div className="absolute inset-0 bg-gradient-ai-mesh opacity-40"></div>
-      <div className="absolute top-1/4 right-1/4 w-80 h-80 bg-ai-primary/8 rounded-full blur-3xl animate-ai-float"></div>
-      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-ai-accent/6 rounded-full blur-3xl animate-ai-pulse"></div>
+      {/* Professional Dark Theme Background Effects */}
+      <div className="absolute inset-0 bg-gradient-ai-mesh opacity-20"></div>
+      <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-ai-secondary/5 rounded-full blur-3xl animate-ai-float"></div>
+      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-ai-accent/8 rounded-full blur-3xl animate-ai-pulse"></div>
       
       <div className="container px-4 relative z-10">
         <div className="text-center mb-20">
-          <Badge variant="outline" className="mb-6 border-ai-primary/40 text-ai-primary bg-white/90 backdrop-blur-md shadow-ai-subtle px-4 py-2">
+          <Badge variant="outline" className="mb-6 border-ai-primary/40 text-ai-primary bg-glass-bg backdrop-blur-md shadow-ai-subtle px-4 py-2">
             <span className="font-medium">Technical Skills</span>
           </Badge>
           <h2 className="text-5xl md:text-6xl font-bold mb-8 bg-gradient-ai-primary bg-clip-text text-transparent relative">
@@ -48,7 +48,7 @@ const Skills = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="group hover:shadow-ai-glow transition-all duration-700 border border-border/30 bg-white/90 backdrop-blur-md relative overflow-hidden hover:-translate-y-2">
+            <Card key={index} className="group hover:shadow-ai-glow transition-all duration-700 border border-border/30 bg-glass-bg backdrop-blur-md relative overflow-hidden hover:-translate-y-2">
               {/* Subtle animated border effect */}
               <div className="absolute inset-0 bg-gradient-ai-primary opacity-0 group-hover:opacity-5 transition-opacity duration-700 rounded-lg"></div>
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-ai-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
@@ -79,7 +79,7 @@ const Skills = () => {
         </div>
 
         <div className="mt-20 text-center">
-          <Card className="max-w-3xl mx-auto border border-ai-accent/20 bg-white/95 backdrop-blur-md shadow-ai-card relative overflow-hidden hover:shadow-ai-glow transition-all duration-500">
+          <Card className="max-w-3xl mx-auto border border-ai-accent/20 bg-glass-bg backdrop-blur-md shadow-ai-card relative overflow-hidden hover:shadow-ai-glow transition-all duration-500">
             {/* Subtle background effect */}
             <div className="absolute inset-0 bg-gradient-ai-accent opacity-5 animate-ai-pulse"></div>
             <div className="absolute top-0 left-0 w-full h-1 bg-gradient-ai-accent"></div>

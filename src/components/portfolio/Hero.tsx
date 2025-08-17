@@ -55,10 +55,10 @@ const Hero = () => {
                 <div className="absolute inset-0 bg-gradient-ai-primary bg-clip-text text-transparent blur-sm opacity-30 animate-ai-glow"></div>
               </h1>
               {/* Floating tech keywords */}
-              <div className="absolute -top-8 -left-8 text-xs text-ai-accent/60 font-mono animate-ai-float">React</div>
-              <div className="absolute -top-4 -right-12 text-xs text-ai-neon/60 font-mono animate-ai-float" style={{animationDelay: '1s'}}>TypeScript</div>
-              <div className="absolute -bottom-4 -left-16 text-xs text-ai-electric/60 font-mono animate-ai-float" style={{animationDelay: '2s'}}>Node.js</div>
-              <div className="absolute -bottom-8 -right-8 text-xs text-ai-secondary/60 font-mono animate-ai-float" style={{animationDelay: '0.5s'}}>AI/ML</div>
+              <div className="absolute -top-8 -left-8 text-xs text-ai-accent/70 font-mono animate-ai-float">React</div>
+              <div className="absolute -top-4 -right-12 text-xs text-ai-neon/70 font-mono animate-ai-float" style={{animationDelay: '1s'}}>TypeScript</div>
+              <div className="absolute -bottom-4 -left-16 text-xs text-ai-electric/70 font-mono animate-ai-float" style={{animationDelay: '2s'}}>Node.js</div>
+              <div className="absolute -bottom-8 -right-8 text-xs text-ai-primary/70 font-mono animate-ai-float" style={{animationDelay: '0.5s'}}>AI/ML</div>
             </div>
 
             <p className="text-xl md:text-2xl text-muted-foreground max-w-4xl mx-auto leading-relaxed font-light">

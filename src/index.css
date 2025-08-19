@@ -14,7 +14,7 @@ All colors MUST be HSL for perfect theming
     
     /* Professional Color Palette */
     --ai-primary: 213 94% 68%;         /* Professional Blue */
-    --ai-secondary: 217 33% 17%;       /* Dark Slate */
+    --ai-secondary: 217 33% 17%;       /* Dark Slate */  
     --ai-accent: 35 77% 49%;           /* Warm Gold Accent */
     --ai-neon: 142 71% 45%;            /* Subtle Green */
     --ai-electric: 262 83% 58%;        /* Deep Purple */

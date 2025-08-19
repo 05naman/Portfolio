@@ -46,7 +46,7 @@ const Experience = () => {
       <div className="container px-4">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4">Experience & Achievements</Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-ai-primary bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Professional Journey
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -56,13 +56,13 @@ const Experience = () => {
 
         {/* Experience Section */}
         <div className="mb-16">
-          <h3 className="text-2xl font-bold mb-8 text-center text-ai-primary">Work Experience</h3>
+          <h3 className="text-2xl font-bold mb-8 text-center text-primary">Work Experience</h3>
           {experiences.map((exp, index) => (
-            <Card key={index} className="max-w-4xl mx-auto hover:shadow-ai-glow transition-all duration-500 border-border/50 bg-card/50 backdrop-blur-sm">
+            <Card key={index} className="max-w-4xl mx-auto hover:shadow-lg hover:shadow-primary/10 transition-all duration-500 border-border/50 bg-card/50 backdrop-blur-sm">
               <CardHeader>
                 <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
                   <div>
-                    <CardTitle className="text-xl text-ai-primary">{exp.title}</CardTitle>
+                    <CardTitle className="text-xl text-primary">{exp.title}</CardTitle>
                     <div className="flex items-center gap-2 text-muted-foreground mt-2">
                       <Building className="h-4 w-4" />
                       <span className="font-semibold">{exp.company}</span>
@@ -82,18 +82,18 @@ const Experience = () => {
               </CardHeader>
               <CardContent className="space-y-6">
                 <div>
-                  <h4 className="font-semibold mb-3 text-ai-secondary">Key Achievements:</h4>
+                  <h4 className="font-semibold mb-3 text-secondary-foreground">Key Achievements:</h4>
                   <ul className="space-y-2">
                     {exp.achievements.map((achievement, achIndex) => (
                       <li key={achIndex} className="flex items-start text-sm text-muted-foreground">
-                        <div className="w-2 h-2 bg-ai-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3 mt-2 flex-shrink-0"></div>
                         {achievement}
                       </li>
                     ))}
                   </ul>
                 </div>
                 <div>
-                  <h4 className="font-semibold mb-3 text-ai-accent">Technologies:</h4>
+                  <h4 className="font-semibold mb-3 text-accent">Technologies:</h4>
                   <div className="flex flex-wrap gap-2">
                     {exp.skills.map((skill, skillIndex) => (
                       <Badge key={skillIndex} variant="secondary" className="text-xs">
@@ -111,14 +111,14 @@ const Experience = () => {
         <div className="grid md:grid-cols-2 gap-8">
           {/* Certifications */}
           <div>
-            <h3 className="text-2xl font-bold mb-6 text-center text-ai-secondary">Certifications</h3>
+            <h3 className="text-2xl font-bold mb-6 text-center text-secondary-foreground">Certifications</h3>
             <div className="space-y-4">
               {certifications.map((cert, index) => (
-                <Card key={index} className="hover:shadow-ai-glow transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
+                <Card key={index} className="hover:shadow-lg hover:shadow-primary/10 transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
                   <CardContent className="p-6">
-                    <h4 className="font-semibold text-ai-primary mb-2">{cert.title}</h4>
+                    <h4 className="font-semibold text-primary mb-2">{cert.title}</h4>
                     <p className="text-sm text-muted-foreground mb-3">{cert.issuer}</p>
-                    <Badge variant="outline" className="text-xs hover:bg-ai-secondary hover:text-white cursor-pointer">
+                    <Badge variant="outline" className="text-xs hover:bg-secondary hover:text-white cursor-pointer">
                       {cert.link}
                     </Badge>
                   </CardContent>
@@ -129,14 +129,14 @@ const Experience = () => {
 
           {/* Achievements */}
           <div>
-            <h3 className="text-2xl font-bold mb-6 text-center text-ai-accent">Achievements</h3>
+            <h3 className="text-2xl font-bold mb-6 text-center text-accent">Achievements</h3>
             <div className="space-y-4">
               {achievements.map((achievement, index) => (
-                <Card key={index} className="hover:shadow-ai-glow transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
+                <Card key={index} className="hover:shadow-lg hover:shadow-accent/10 transition-all duration-300 border-border/50 bg-card/50 backdrop-blur-sm">
                   <CardContent className="p-6">
-                    <h4 className="font-semibold text-ai-accent mb-2">{achievement.title}</h4>
+                    <h4 className="font-semibold text-accent mb-2">{achievement.title}</h4>
                     <p className="text-sm text-muted-foreground mb-3">{achievement.description}</p>
-                    <Badge variant="outline" className="text-xs hover:bg-ai-accent hover:text-white cursor-pointer">
+                    <Badge variant="outline" className="text-xs hover:bg-accent hover:text-white cursor-pointer">
                       {achievement.link}
                     </Badge>
                   </CardContent>
@@ -148,9 +148,9 @@ const Experience = () => {
 
         {/* Extra-curricular */}
         <div className="mt-16">
-          <Card className="max-w-4xl mx-auto border-ai-primary/20 bg-gradient-to-br from-card/80 to-secondary/50 backdrop-blur-sm">
+          <Card className="max-w-4xl mx-auto border-primary/20 bg-gradient-to-br from-card/80 to-secondary/50 backdrop-blur-sm">
             <CardHeader>
-              <CardTitle className="text-center text-ai-primary">Extra-Curricular Activities</CardTitle>
+              <CardTitle className="text-center text-primary">Extra-Curricular Activities</CardTitle>
             </CardHeader>
             <CardContent className="space-y-4">
               <div className="grid md:grid-cols-2 gap-6">

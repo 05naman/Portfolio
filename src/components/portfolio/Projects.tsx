@@ -38,7 +38,7 @@ const Projects = () => {
       <div className="container px-4">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4">Featured Projects</Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-ai-primary bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Recent Work
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -48,14 +48,14 @@ const Projects = () => {
 
         <div className="grid lg:grid-cols-2 gap-8 max-w-6xl mx-auto">
           {projects.map((project, index) => (
-            <Card key={index} className="group hover:shadow-ai-glow transition-all duration-500 border-border/50 bg-card/50 backdrop-blur-sm overflow-hidden">
+            <Card key={index} className="group hover:shadow-lg hover:shadow-primary/10 transition-all duration-500 border-border/50 bg-card/50 backdrop-blur-sm overflow-hidden">
               <CardHeader>
                 <div className="flex items-center justify-between">
-                  <CardTitle className="text-2xl group-hover:text-ai-primary transition-colors">
+                  <CardTitle className="text-2xl group-hover:text-primary transition-colors">
                     {project.title}
                   </CardTitle>
                   <div className="flex gap-2">
-                    <Button size="sm" variant="outline" asChild className="hover:bg-ai-primary hover:text-white">
+                    <Button size="sm" variant="outline" asChild className="hover:bg-primary hover:text-white">
                       <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                         <ExternalLink className="h-4 w-4" />
                       </a>
@@ -66,11 +66,11 @@ const Projects = () => {
               </CardHeader>
               <CardContent className="space-y-6">
                 <div>
-                  <h4 className="font-semibold mb-3 text-ai-secondary">Key Features:</h4>
+                  <h4 className="font-semibold mb-3 text-secondary-foreground">Key Features:</h4>
                   <ul className="space-y-2">
                     {project.features.map((feature, featureIndex) => (
                       <li key={featureIndex} className="flex items-center text-sm text-muted-foreground">
-                        <div className="w-2 h-2 bg-ai-primary rounded-full mr-3 flex-shrink-0"></div>
+                        <div className="w-2 h-2 bg-primary rounded-full mr-3 flex-shrink-0"></div>
                         {feature}
                       </li>
                     ))}
@@ -78,7 +78,7 @@ const Projects = () => {
                 </div>
                 
                 <div>
-                  <h4 className="font-semibold mb-3 text-ai-accent">Technologies Used:</h4>
+                  <h4 className="font-semibold mb-3 text-accent">Technologies Used:</h4>
                   <div className="flex flex-wrap gap-2">
                     {project.technologies.map((tech, techIndex) => (
                       <Badge key={techIndex} variant="secondary" className="text-xs">
@@ -88,7 +88,7 @@ const Projects = () => {
                   </div>
                 </div>
 
-                <Button className="w-full group-hover:bg-gradient-ai-primary" asChild>
+                <Button className="w-full group-hover:bg-gradient-to-r group-hover:from-primary group-hover:to-accent" asChild>
                   <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
                     View Live Project
                     <ExternalLink className="ml-2 h-4 w-4" />
@@ -101,7 +101,7 @@ const Projects = () => {
 
         <div className="text-center mt-12">
           <p className="text-muted-foreground mb-4">More projects coming soon...</p>
-          <Button variant="outline" size="lg" className="hover:bg-ai-primary hover:text-white">
+          <Button variant="outline" size="lg" className="hover:bg-primary hover:text-white">
             <Github className="mr-2 h-4 w-4" />
             View All on GitHub
           </Button>

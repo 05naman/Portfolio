@@ -26,7 +26,7 @@ const About = () => {
       <div className="container px-4">
         <div className="text-center mb-16">
           <Badge variant="outline" className="mb-4">About Me</Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-ai-primary bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Passionate Developer & Innovator
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto">
@@ -38,9 +38,9 @@ const About = () => {
 
         <div className="grid md:grid-cols-3 gap-8 mb-16">
           {highlights.map((highlight, index) => (
-            <Card key={index} className="group hover:shadow-ai-glow transition-all duration-500 border-border/50 bg-card/50 backdrop-blur-sm">
+            <Card key={index} className="group hover:shadow-lg hover:shadow-primary/10 transition-all duration-500 border-border/50 bg-card/50 backdrop-blur-sm">
               <CardHeader className="text-center">
-                <div className="mx-auto mb-4 p-3 bg-gradient-ai-primary rounded-full w-fit group-hover:scale-110 transition-transform duration-300">
+                <div className="mx-auto mb-4 p-3 bg-gradient-to-br from-primary to-accent rounded-full w-fit group-hover:scale-110 transition-transform duration-300">
                   <highlight.icon className="h-6 w-6 text-white" />
                 </div>
                 <CardTitle className="text-xl">{highlight.title}</CardTitle>
@@ -53,9 +53,9 @@ const About = () => {
         </div>
 
         <div className="text-center">
-          <Card className="max-w-4xl mx-auto border-ai-primary/20 bg-gradient-to-br from-card/80 to-secondary/50 backdrop-blur-sm">
+          <Card className="max-w-4xl mx-auto border-primary/20 bg-gradient-to-br from-card/80 to-secondary/50 backdrop-blur-sm">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-4 text-ai-primary">Objective</h3>
+              <h3 className="text-2xl font-bold mb-4 text-primary">Objective</h3>
               <p className="text-lg text-foreground leading-relaxed">
                 As a Full Stack Developer with strong foundations in Computer Science and Business Systems, 
                 I'm seeking opportunities to build scalable web applications and impactful products. 

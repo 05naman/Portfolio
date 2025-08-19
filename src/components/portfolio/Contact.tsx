@@ -43,19 +43,19 @@ const Contact = () => {
   ];
 
   return (
-    <section className="py-20 bg-gradient-ai-hero relative overflow-hidden">
+    <section className="py-20 bg-gradient-to-br from-background to-secondary/20 relative overflow-hidden">
       {/* Background elements */}
       <div className="absolute inset-0 overflow-hidden">
-        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-ai-secondary/10 rounded-full blur-3xl animate-ai-float"></div>
-        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-ai-accent/10 rounded-full blur-3xl animate-ai-pulse"></div>
+        <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-secondary/10 rounded-full blur-3xl animate-ai-float"></div>
+        <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent/10 rounded-full blur-3xl animate-ai-pulse"></div>
       </div>
 
       <div className="container px-4 relative z-10">
         <div className="text-center mb-16">
-          <Badge variant="outline" className="mb-4 border-ai-primary text-ai-primary bg-background/10 backdrop-blur-sm">
+          <Badge variant="outline" className="mb-4 border-primary text-primary bg-background/10 backdrop-blur-sm">
             Get In Touch
           </Badge>
-          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-ai-primary bg-clip-text text-transparent">
+          <h2 className="text-4xl md:text-5xl font-bold mb-6 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
             Let's Work Together
           </h2>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
@@ -69,7 +69,7 @@ const Contact = () => {
             {/* Contact Information */}
             <Card className="hover:shadow-ai-glow transition-all duration-500 border-border/50 bg-card/20 backdrop-blur-md">
               <CardHeader>
-                <CardTitle className="text-2xl text-ai-primary flex items-center gap-3">
+                <CardTitle className="text-2xl text-primary flex items-center gap-3">
                   <Mail className="h-6 w-6" />
                   Contact Information
                 </CardTitle>
@@ -77,9 +77,9 @@ const Contact = () => {
               <CardContent className="space-y-4">
                 {contactInfo.map((contact, index) => (
                   <div key={index} className="flex items-center gap-4 group">
-                    <div className={`p-2 rounded-full ${contact.primary ? 'bg-gradient-ai-primary' : 'bg-secondary'} group-hover:scale-110 transition-transform`}>
-                      <contact.icon className={`h-4 w-4 ${contact.primary ? 'text-white' : 'text-muted-foreground'}`} />
-                    </div>
+                  <div className={`p-2 rounded-full ${contact.primary ? 'bg-gradient-to-br from-primary to-accent' : 'bg-secondary'} group-hover:scale-110 transition-transform`}>
+                    <contact.icon className={`h-4 w-4 ${contact.primary ? 'text-white' : 'text-muted-foreground'}`} />
+                  </div>
                     <div className="flex-1">
                       <p className="text-sm text-muted-foreground">{contact.label}</p>
                       {contact.href ? (
@@ -87,7 +87,7 @@ const Contact = () => {
                           href={contact.href} 
                           target={contact.href.startsWith('http') ? '_blank' : undefined}
                           rel={contact.href.startsWith('http') ? 'noopener noreferrer' : undefined}
-                          className="text-foreground hover:text-ai-primary transition-colors"
+                          className="text-foreground hover:text-primary transition-colors"
                         >
                           {contact.value}
                         </a>
@@ -103,24 +103,24 @@ const Contact = () => {
             {/* Quick Actions */}
             <Card className="hover:shadow-ai-glow transition-all duration-500 border-border/50 bg-card/20 backdrop-blur-md">
               <CardHeader>
-                <CardTitle className="text-2xl text-ai-secondary">Quick Actions</CardTitle>
+                <CardTitle className="text-2xl text-secondary-foreground">Quick Actions</CardTitle>
               </CardHeader>
               <CardContent className="space-y-4">
-                <Button className="w-full justify-start bg-gradient-ai-primary hover:shadow-ai-glow" asChild>
+                <Button className="w-full justify-start bg-gradient-to-r from-primary to-accent hover:shadow-lg hover:shadow-primary/20" asChild>
                   <a href="mailto:namannigam300@gmail.com">
                     <Mail className="mr-3 h-4 w-4" />
                     Send Email
                   </a>
                 </Button>
                 
-                <Button variant="outline" className="w-full justify-start hover:bg-ai-secondary hover:text-white" asChild>
+                <Button variant="outline" className="w-full justify-start hover:bg-secondary hover:text-white" asChild>
                   <a href="https://linkedin.com/in/naman-nigam" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="mr-3 h-4 w-4" />
                     Connect on LinkedIn
                   </a>
                 </Button>
                 
-                <Button variant="outline" className="w-full justify-start hover:bg-ai-accent hover:text-white" asChild>
+                <Button variant="outline" className="w-full justify-start hover:bg-accent hover:text-white" asChild>
                   <a href="https://github.com/05naman" target="_blank" rel="noopener noreferrer">
                     <Github className="mr-3 h-4 w-4" />
                     View GitHub Profile
@@ -134,19 +134,19 @@ const Contact = () => {
           {/* Call to Action */}
           <Card className="text-center border-ai-primary/20 bg-gradient-to-r from-card/60 to-secondary/40 backdrop-blur-md">
             <CardContent className="p-8">
-              <h3 className="text-2xl font-bold mb-4 text-ai-primary">Ready to Get Started?</h3>
+              <h3 className="text-2xl font-bold mb-4 text-primary">Ready to Get Started?</h3>
               <p className="text-muted-foreground mb-6 max-w-2xl mx-auto">
                 Whether you're looking for a dedicated intern, a collaborator on an exciting project, 
                 or just want to discuss technology trends, I'd love to hear from you.
               </p>
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
-                <Button size="lg" className="bg-gradient-ai-primary hover:shadow-ai-glow" asChild>
+                <Button size="lg" className="bg-gradient-to-r from-primary to-accent hover:shadow-lg hover:shadow-primary/20" asChild>
                   <a href="mailto:namannigam300@gmail.com">
                     <Mail className="mr-2 h-4 w-4" />
                     Start a Conversation
                   </a>
                 </Button>
-                <Button variant="outline" size="lg" className="hover:bg-ai-primary hover:text-white" asChild>
+                <Button variant="outline" size="lg" className="hover:bg-primary hover:text-white" asChild>
                   <a href="https://linkedin.com/in/naman-nigam" target="_blank" rel="noopener noreferrer">
                     <Linkedin className="mr-2 h-4 w-4" />
                     Professional Network

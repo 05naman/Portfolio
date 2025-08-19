@@ -6,40 +6,39 @@ const Skills = () => {
     {
       title: "Programming Languages",
       skills: ["C++", "Java", "JavaScript", "Python", "TypeScript", "C"],
-      color: "ai-primary"
+      icon: "💻"
     },
     {
       title: "Web Development",
       skills: ["React.js", "Node.js", "Express", "HTML5", "CSS3", "Tailwind CSS"],
-      color: "ai-secondary"
+      icon: "🌐"
     },
     {
       title: "Databases",
       skills: ["MongoDB", "SQL", "NoSQL", "Database Design"],
-      color: "ai-accent"
+      icon: "🗄️"
     },
     {
       title: "Tools & Platforms",
       skills: ["GitHub", "Vercel", "Appwrite", "Postman", "Cursor AI", "Lovable"],
-      color: "ai-primary"
+      icon: "🛠️"
     }
   ];
 
   return (
-    <section className="py-24 relative overflow-hidden">
-      {/* Professional Dark Theme Background Effects */}
+    <section className="py-24 relative overflow-hidden bg-secondary/10">
+      {/* Background Effects */}
       <div className="absolute inset-0 bg-gradient-ai-mesh opacity-20"></div>
-      <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-ai-secondary/5 rounded-full blur-3xl animate-ai-float"></div>
-      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-ai-accent/8 rounded-full blur-3xl animate-ai-pulse"></div>
+      <div className="absolute top-1/4 right-1/4 w-64 h-64 bg-primary/5 rounded-full blur-3xl animate-ai-float"></div>
+      <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-accent/5 rounded-full blur-3xl animate-ai-pulse"></div>
       
       <div className="container px-4 relative z-10">
         <div className="text-center mb-20">
-          <Badge variant="outline" className="mb-6 border-ai-primary/40 text-ai-primary bg-glass-bg backdrop-blur-md shadow-ai-subtle px-4 py-2">
-            <span className="font-medium">Technical Skills</span>
+          <Badge className="mb-6 bg-primary/10 text-primary border-primary/20 px-4 py-2">
+            Technical Skills
           </Badge>
-          <h2 className="text-5xl md:text-6xl font-bold mb-8 bg-gradient-ai-primary bg-clip-text text-transparent relative">
-            <span className="relative z-10">Technology Stack</span>
-            <div className="absolute inset-0 bg-gradient-ai-primary bg-clip-text text-transparent blur-sm opacity-30 animate-ai-glow"></div>
+          <h2 className="text-5xl md:text-6xl font-bold mb-8 bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">
+            Technology Stack
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Proficient in modern web technologies and constantly learning new tools to stay at the forefront of development
@@ -48,16 +47,18 @@ const Skills = () => {
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {skillCategories.map((category, index) => (
-            <Card key={index} className="group hover:shadow-ai-glow transition-all duration-700 border border-border/30 bg-glass-bg backdrop-blur-md relative overflow-hidden hover:-translate-y-2">
-              {/* Subtle animated border effect */}
-              <div className="absolute inset-0 bg-gradient-ai-primary opacity-0 group-hover:opacity-5 transition-opacity duration-700 rounded-lg"></div>
-              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-ai-primary opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
+            <Card key={index} className="group hover:shadow-lg hover:shadow-primary/10 transition-all duration-500 border border-border/50 bg-card/50 backdrop-blur-sm relative overflow-hidden hover:-translate-y-2">
+              {/* Hover Effects */}
+              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 to-accent/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded-lg"></div>
+              <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary to-accent opacity-0 group-hover:opacity-100 transition-opacity duration-500"></div>
               
               <div className="relative z-10 p-6">
-                <CardHeader className="pb-4">
-                  <CardTitle className="text-lg text-center text-ai-primary group-hover:scale-105 transition-transform font-semibold relative">
-                    <span className="relative z-10">{category.title}</span>
-                    <div className="absolute inset-0 bg-ai-primary/10 blur-sm opacity-0 group-hover:opacity-100 transition-opacity duration-500 rounded"></div>
+                <CardHeader className="pb-4 text-center">
+                  <div className="text-4xl mb-4 group-hover:scale-110 transition-transform duration-300">
+                    {category.icon}
+                  </div>
+                  <CardTitle className="text-lg text-foreground group-hover:text-primary transition-colors font-semibold">
+                    {category.title}
                   </CardTitle>
                 </CardHeader>
                 <CardContent>
@@ -66,7 +67,7 @@ const Skills = () => {
                       <Badge 
                         key={skillIndex} 
                         variant="secondary" 
-                        className="hover:bg-gradient-ai-primary hover:text-white hover:shadow-ai-subtle transition-all duration-300 cursor-default text-xs bg-secondary/80 backdrop-blur-sm border border-border/20 font-medium px-3 py-1"
+                        className="hover:bg-primary hover:text-primary-foreground hover:shadow-sm transition-all duration-300 cursor-default text-xs font-medium px-3 py-1"
                       >
                         {skill}
                       </Badge>
@@ -79,19 +80,18 @@ const Skills = () => {
         </div>
 
         <div className="mt-20 text-center">
-          <Card className="max-w-3xl mx-auto border border-ai-accent/20 bg-glass-bg backdrop-blur-md shadow-ai-card relative overflow-hidden hover:shadow-ai-glow transition-all duration-500">
-            {/* Subtle background effect */}
-            <div className="absolute inset-0 bg-gradient-ai-accent opacity-5 animate-ai-pulse"></div>
-            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-ai-accent"></div>
+          <Card className="max-w-3xl mx-auto border border-accent/20 bg-card/50 backdrop-blur-sm shadow-lg relative overflow-hidden hover:shadow-accent/10 transition-all duration-500">
+            {/* Background Effect */}
+            <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-primary/5 animate-ai-pulse"></div>
+            <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-accent to-primary"></div>
             
             <CardContent className="p-10 relative z-10">
-              <h3 className="text-2xl font-bold mb-6 text-ai-accent relative">
-                <span className="relative z-10">Always Learning</span>
-                <div className="absolute inset-0 bg-ai-accent/20 blur-sm animate-ai-glow opacity-30"></div>
+              <h3 className="text-2xl font-bold mb-6 text-accent">
+                Always Learning
               </h3>
               <p className="text-muted-foreground leading-relaxed text-lg">
                 Continuously expanding my skillset through hands-on projects, certifications, and staying 
-                updated with the latest industry trends and <span className="text-ai-primary font-semibold bg-ai-primary/10 px-2 py-1 rounded">AI-powered</span> best practices.
+                updated with the latest industry trends and <span className="text-primary font-semibold bg-primary/10 px-2 py-1 rounded">AI-powered</span> best practices.
               </p>
             </CardContent>
           </Card>

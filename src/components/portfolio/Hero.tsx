@@ -18,10 +18,8 @@ const Hero = () => {
         <div className="text-center max-w-5xl mx-auto">
           {/* Profile Section */}
           <div className="relative mb-12 group">
-            <div className="mx-auto w-32 h-32 rounded-full bg-gradient-to-br from-primary via-primary/80 to-accent p-1 shadow-lg hover:shadow-primary/20 transition-all duration-700 group-hover:scale-105">
-              <div className="w-full h-full rounded-full bg-background/95 backdrop-blur-sm flex items-center justify-center border border-primary/20">
-                <div className="text-3xl font-bold text-primary">NN</div>
-              </div>
+            <div className="mx-auto w-32 h-32 rounded-full bg-gradient-to-br from-primary via-primary/80 to-accent p-1 shadow-lg hover:shadow-primary/20 transition-all duration-700 group-hover:scale-105 flex items-center justify-center">
+              <div className="text-3xl font-bold text-primary">NN</div>
             </div>
             
             {/* Status Indicator */}

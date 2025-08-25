@@ -118,7 +118,7 @@ const Experience = () => {
 
   // Certification Card Component
   const CertificationCard = ({ cert, index }: { cert: any; index: number }) => (
-    <Card key={index} className="group hover:shadow-lg hover:shadow-purple-500/20 hover:shadow-2xl transition-all duration-300 border-slate-700/50 bg-slate-900/50 backdrop-blur-sm rounded-xl hover:scale-105 hover:border-purple-500/40 hover:bg-slate-800/70">
+    <Card key={index} className="group hover:shadow-purple-500/20 hover:shadow-2xl transition-all duration-300 border-slate-700/50 bg-slate-900/50 backdrop-blur-sm rounded-xl hover:scale-105 hover:border-purple-500/40 hover:bg-slate-800/70">
       <CardContent className="p-6">
         <h4 className="font-semibold text-purple-300 mb-2 group-hover:text-purple-200 transition-colors duration-300">{cert.title}</h4>
         <p className="text-sm text-slate-300 mb-3 group-hover:text-slate-200 transition-colors duration-300">{cert.issuer}</p>

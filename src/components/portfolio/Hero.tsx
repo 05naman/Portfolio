@@ -1,106 +1,102 @@
-import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, ExternalLink, Code2, Sparkles } from "lucide-react";
+import { Mail } from "lucide-react";
+import { LinkedInLogoIcon } from '@radix-ui/react-icons';
 
 const Hero = () => {
-  return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
-      {/* Modern Background Effects */}
-      <div className="absolute inset-0 bg-gradient-to-br from-background via-background to-secondary/20"></div>
-      <div className="absolute inset-0 bg-gradient-ai-mesh opacity-30"></div>
-      
-      {/* Floating Elements */}
-      <div className="absolute top-20 left-20 w-32 h-32 bg-primary/5 rounded-full blur-2xl animate-ai-float"></div>
-      <div className="absolute bottom-20 right-20 w-48 h-48 bg-accent/5 rounded-full blur-3xl animate-ai-pulse"></div>
-      <div className="absolute top-1/2 left-10 w-24 h-24 bg-primary/10 rounded-full blur-xl animate-ai-glow"></div>
-      
-      <div className="container px-4 relative z-10">
-        <div className="text-center max-w-5xl mx-auto">
-          {/* Profile Section */}
-          <div className="relative mb-12 group">
-            <div className="mx-auto w-32 h-32 rounded-full bg-gradient-to-br from-primary via-primary/80 to-accent p-1 shadow-lg hover:shadow-primary/20 transition-all duration-700 group-hover:scale-105 flex items-center justify-center">
-              <div className="text-3xl font-bold text-primary">NN</div>
-            </div>
-            
-            {/* Status Indicator */}
-            <div className="absolute -bottom-2 left-1/2 transform -translate-x-1/2">
-              <div className="bg-green-500 w-6 h-6 rounded-full border-4 border-background shadow-lg animate-pulse"></div>
-            </div>
-          </div>
+  // Welcome Header Component
+  const WelcomeHeader = () => (
+    <div className="space-y-6">
+      {/* Main Name - Single Line */}
+      <h1 className="text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight animate-slide-up leading-none">
+        <span className="bg-gradient-to-r from-purple-400 via-purple-300 to-emerald-300 bg-clip-text text-transparent">
+          Naman Nigam
+        </span>
+      </h1>
 
-          {/* Main Content */}
-          <div className="space-y-8">
-            {/* Professional Badge */}
-            <Badge className="bg-primary/10 text-primary border-primary/20 hover:bg-primary/15 transition-all duration-300 px-4 py-2">
-              <Code2 className="w-4 h-4 mr-2" />
-              Frontend Developer
-            </Badge>
+      {/* Tagline */}
+      <div className="flex items-center justify-center gap-3 text-lg md:text-xl text-slate-300 animate-fade-in-delayed mt-6">
+        <span>Building the future of</span>
+        <span className="text-purple-300 font-semibold">web experiences</span>
+      </div>
+    </div>
+  );
 
-            {/* Name and Title */}
-            <div className="space-y-4">
-              <h1 className="text-6xl md:text-8xl font-bold tracking-tight">
-                <span className="bg-gradient-to-r from-primary via-primary to-accent bg-clip-text text-transparent">
-                  Naman Nigam
-                </span>
-              </h1>
-              
-              <div className="flex items-center justify-center gap-2 text-xl md:text-2xl text-muted-foreground">
-                <Sparkles className="w-6 h-6 text-accent animate-pulse" />
-                <span>Building the future of web experiences</span>
-                <Sparkles className="w-6 h-6 text-accent animate-pulse" />
-              </div>
-            </div>
+  // Description Component
+  const Description = () => (
+    <p className="text-xl md:text-2xl text-slate-400 max-w-4xl mx-auto leading-relaxed animate-fade-in-delayed-2">
+      Passionate <span className="text-purple-400 font-semibold">Full Stack Developer</span> specializing in
+      modern web technologies. Currently pursuing Computer Science at VIT with expertise in
+      React, TypeScript, and cloud technologies.
+    </p>
+  );
 
-            {/* Description */}
-            <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-              Passionate <span className="text-primary font-semibold">Full Stack Developer</span> specializing in 
-              modern web technologies. Currently pursuing Computer Science at VIT with expertise in 
-              React, TypeScript, and cloud technologies.
-            </p>
+  // Action Buttons Component
+  const ActionButtons = () => (
+    <div className="flex flex-wrap justify-center gap-6 pt-8 animate-fade-in-delayed-3">
+      <Button
+        size="lg"
+        className="bg-gradient-to-r from-purple-500 to-emerald-400 hover:from-purple-600 hover:to-emerald-500 text-white shadow-lg hover:shadow-purple-500/25 transition-all duration-300 px-12 py-6 text-lg font-medium group rounded-2xl"
+        asChild
+      >
+        <a href="mailto:namannigam300@gmail.com">
+          <Mail className="w-6 h-6 mr-3" />
+          Get In Touch
+        </a>
+      </Button>
 
-            {/* Action Buttons */}
-            <div className="flex flex-wrap justify-center gap-4 pt-4">
-              <Button size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground shadow-lg hover:shadow-primary/20 transition-all duration-300 px-8">
-                <Mail className="w-5 h-5 mr-2" />
-                Contact Me
-              </Button>
-              
-              <Button variant="outline" size="lg" className="border-primary/30 hover:bg-primary/5 hover:border-primary/50 transition-all duration-300 px-8">
-                <ExternalLink className="w-5 h-5 mr-2" />
-                View Work
-              </Button>
-              
-              <Button variant="ghost" size="lg" className="hover:bg-primary/10 transition-all duration-300">
-                <Linkedin className="w-5 h-5 mr-2" />
-                LinkedIn
-              </Button>
-            </div>
+      <Button
+        size="lg"
+        className="bg-gradient-to-r from-blue-500 to-purple-500 hover:from-blue-600 hover:to-purple-600 text-white shadow-lg hover:shadow-blue-500/25 transition-all duration-300 px-12 py-6 text-lg font-medium group rounded-2xl"
+        asChild
+      >
+        <a href="https://linkedin.com/in/naman-nigam" target="_blank" rel="noopener noreferrer">
+          <LinkedInLogoIcon className="w-6 h-6 mr-3" />
+          Connect
+        </a>
+      </Button>
+    </div>
+  );
 
-            {/* Stats */}
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-2xl mx-auto pt-8">
-              <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl p-6 hover:bg-card/70 transition-all duration-300 group">
-                <div className="text-3xl font-bold text-primary mb-2 group-hover:scale-105 transition-transform">8.92</div>
-                <div className="text-sm text-muted-foreground">Current CGPA</div>
-              </div>
-              
-              <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl p-6 hover:bg-card/70 transition-all duration-300 group">
-                <div className="text-3xl font-bold text-accent mb-2 group-hover:scale-105 transition-transform">VIT</div>
-                <div className="text-sm text-muted-foreground">University</div>
-              </div>
-              
-              <div className="bg-card/50 backdrop-blur-sm border border-border/50 rounded-xl p-6 hover:bg-card/70 transition-all duration-300 group">
-                <div className="text-3xl font-bold text-green-500 mb-2 group-hover:scale-105 transition-transform">Open</div>
-                <div className="text-sm text-muted-foreground">To Opportunities</div>
-              </div>
-            </div>
-          </div>
+  // Stats Card Component
+  const StatsCard = ({ value, label, colorClass }: { value: string; label: string; colorClass: string }) => (
+    <div className="group relative">
+      <div className="relative bg-slate-900/60 backdrop-blur-xl border border-slate-700/30 rounded-2xl p-8 hover:bg-slate-800/80 hover:shadow-xl transition-all duration-500 group-hover:scale-105">
+        <div className={`text-4xl font-bold ${colorClass} mb-3 group-hover:text-purple-300 transition-colors duration-300`}>
+          {value}
+        </div>
+        <div className="text-slate-400 text-lg font-medium group-hover:text-slate-300 transition-colors duration-300">
+          {label}
         </div>
       </div>
-      
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
-        <div className="w-1 h-8 bg-gradient-to-b from-primary to-transparent rounded-full"></div>
+    </div>
+  );
+
+  // Stats Section Component
+  const StatsSection = () => (
+    <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-3xl mx-auto pt-16 animate-fade-in-delayed-4">
+      <StatsCard value="8.92" label="Current CGPA" colorClass="text-purple-400" />
+      <StatsCard value="VIT" label="University" colorClass="text-orange-400" />
+      <StatsCard value="Open" label="To Opportunities" colorClass="text-emerald-400" />
+    </div>
+  );
+
+  // Main Container Component
+  const MainContainer = () => (
+    <div className="container px-4 relative z-10">
+      <div className="text-center max-w-6xl mx-auto">
+        <div className="space-y-12">
+          <WelcomeHeader />
+          <Description />
+          <ActionButtons />
+          <StatsSection />
+        </div>
       </div>
+    </div>
+  );
+
+  return (
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden pt-20">
+      <MainContainer />
     </section>
   );
 };

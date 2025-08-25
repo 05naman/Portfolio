@@ -9,51 +9,43 @@ import Contact from "@/components/portfolio/Contact";
 import Footer from "@/components/portfolio/Footer";
 
 const Index = () => {
-  return (
-    <div className="min-h-screen bg-background relative overflow-hidden">
-      {/* Professional Background Effects */}
-      <div className="fixed inset-0 bg-gradient-ai-mesh pointer-events-none z-0 opacity-30"></div>
-      <div className="fixed inset-0 bg-gradient-ai-hero pointer-events-none z-0"></div>
-      
-      {/* Subtle Grid Pattern */}
-      <div className="fixed inset-0 opacity-[0.015] pointer-events-none z-0">
-        <div className="absolute inset-0 bg-[linear-gradient(rgba(69,90,120,0.2)_1px,transparent_1px),linear-gradient(90deg,rgba(69,90,120,0.2)_1px,transparent_1px)] bg-[size:60px_60px] animate-ai-float"></div>
+  // Main Content Component
+  const MainContent = () => (
+    <main>
+      <Hero />
+      <div id="about">
+        <About />
       </div>
-      
-      {/* Subtle Floating Particles */}
-      <div className="fixed inset-0 pointer-events-none z-0">
-        <div className="absolute top-1/4 left-1/4 w-1 h-1 bg-ai-primary rounded-full animate-ai-matrix opacity-10"></div>
-        <div className="absolute top-3/4 right-1/4 w-0.5 h-0.5 bg-ai-accent rounded-full animate-ai-matrix opacity-15" style={{animationDelay: '1s'}}></div>
-        <div className="absolute top-1/2 left-3/4 w-1 h-1 bg-ai-neon rounded-full animate-ai-matrix opacity-8" style={{animationDelay: '2s'}}></div>
+      <div id="skills">
+        <Skills />
       </div>
+      <div id="projects">
+        <Projects />
+      </div>
+      <div id="experience">
+        <Experience />
+      </div>
+      <div id="education">
+        <Education />
+      </div>
+      <div id="contact">
+        <Contact />
+      </div>
+    </main>
+  );
 
+  // Page Container Component
+  const PageContainer = () => (
+    <div className="min-h-screen bg-slate-950 relative overflow-hidden">
       <div className="relative z-10">
         <Navigation />
-        <main>
-          <Hero />
-          <div id="about">
-            <About />
-          </div>
-          <div id="skills">
-            <Skills />
-          </div>
-          <div id="projects">
-            <Projects />
-          </div>
-          <div id="experience">
-            <Experience />
-          </div>
-          <div id="education">
-            <Education />
-          </div>
-          <div id="contact">
-            <Contact />
-          </div>
-        </main>
+        <MainContent />
         <Footer />
       </div>
     </div>
   );
+
+  return <PageContainer />;
 };
 
 export default Index;
